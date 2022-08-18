@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class IntroCard extends StatelessWidget {
-  const IntroCard({Key? key}) : super(key: key);
+  final String text;   
+  const IntroCard({required this.text, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,8 @@ class IntroCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(color: Colors.black, width: 1)
       ),
-      child: Text("Welcome! My name is Greta Ivan",
+      child: Text(
+        text,
         textAlign: TextAlign.center,
         style: TextStyle(
           color: Colors.grey.shade900,

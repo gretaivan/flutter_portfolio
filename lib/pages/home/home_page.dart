@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: IntroCard(),
+          child: IntroCard(text: "Welcome! My name is Greta"),
         ),
     );
   }
